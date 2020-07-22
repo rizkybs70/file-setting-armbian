@@ -39,4 +39,5 @@ sudo systemctl mask NetworkManager.service
 
 ## DTB
 *Tested debian dan ubuntu*
+
 DTB mod ke 2GB agar usage RAM bisa sampai habis
