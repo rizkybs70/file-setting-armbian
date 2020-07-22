@@ -16,5 +16,5 @@ _IP=$(hostname -I) || true
 if [ "$_IP" ]; then
   printf "My IP address is %s\n" "$_IP"
 fi
-su - root -c '/usr/bin/tightvncserver :1'
+su - root -c '/usr/bin/tightvncserver :1 -geometry 800x550 -depth 24'
 exit 0
