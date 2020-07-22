@@ -1,0 +1,15 @@
+source /etc/network/interfaces.d/*
+# Network is managed by Network manager
+auto lo
+iface lo inet loopback
+# Network interfaces
+allow-hotplug eth0
+iface eth0 inet dhcp
+hwaddress ether 00:15:18:01:81:43
+
+auto br0
+iface br0 inet dhcp
+        bridge_ports eth0
+        bridge_stp off
+        bridge_fd 0
+        bridge_maxwait 0
