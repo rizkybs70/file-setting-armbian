@@ -30,6 +30,16 @@ netmask 255.255.255.0
 gateway 192.168.99.1
 dns-nameservers 192.168.99.1 8.8.8.8
 ```
+```
+source /etc/network/interfaces.d/*
+# Network is managed by Network manager
+auto lo
+iface lo inet loopback
+# Network interfaces
+allow-hotplug eth0
+iface eth0 inet dhcp
+hwaddress ether 00:15:18:01:81:42
+```
  **3.** Disable NetworkManager.service
  ```
 sudo systemctl stop NetworkManager.service  
