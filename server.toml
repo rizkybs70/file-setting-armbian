@@ -1,0 +1,14 @@
+# server.toml
+[server]
+bind_addr = "0.0.0.0:9999"
+default_token = "tmt4HjcPvCUV"
+
+[server.services.web1]
+bind_addr = "0.0.0.0:85"
+
+[server.services.web2]
+bind_addr = "0.0.0.0:7000"
+
+[server.services.winbox]
+bind_addr = "0.0.0.0:8291"
+

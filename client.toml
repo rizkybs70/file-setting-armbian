@@ -1,0 +1,13 @@
+# client.toml
+[client]
+remote_addr = "47.250.39.54:9999"
+default_token = "tmt4HjcPvCUV"
+
+[client.services.web1]
+local_addr = "192.168.99.8:80"
+
+[client.services.web2]
+local_addr = "192.168.99.8:7000"
+
+[client.services.winbox]
+local_addr = "10.10.10.2:8291"
