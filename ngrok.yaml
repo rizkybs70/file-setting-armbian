@@ -1,0 +1,10 @@
+authtoken: 2Ds5UjfWKjka8XgbOx8TjbNhL5K_3MxzUqnRbLkndAMPsQ39Q
+region: ap
+version: 2
+tunnels:
+  webserver:
+    addr: webserver:80
+    proto: http
+  grafana:
+    addr: mk_grafana:3000
+    proto: http
