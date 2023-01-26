@@ -1,4 +1,4 @@
-authtoken: xxxxxxxxxxxxxxxx
+authtoken: xxxxxxxxxxxxxxx
 region: ap
 version: 2
 tunnels:
@@ -9,5 +9,5 @@ tunnels:
     addr: smokeping:80
     proto: http
   winbox:
-    addr: 10.10.10.1:8291
+    addr: 192.168.99.1:8291
     proto: tcp
