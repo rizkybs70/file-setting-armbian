@@ -1,10 +1,13 @@
-authtoken: xxxxxxxxxxxxxxx
+authtoken: xxxxxxxxxxxxxxxx
 region: ap
 version: 2
 tunnels:
-  webserver:
-    addr: webserver:80
+  webserver1:
+    addr: docker-lamp:80
     proto: http
-  grafana:
-    addr: mk_grafana:3000
+  smokeping:
+    addr: smokeping:80
     proto: http
+  winbox:
+    addr: 10.10.10.1:8291
+    proto: tcp
