@@ -3,7 +3,7 @@
 #  Setting file for server
 
 ## Network
-*beraku untuk distro dengan basis debian, ubuntu dll*
+*berlaku untuk distro dengan basis debian, ubuntu dll*
 kadang lebih mudah(atau sudah terbiasa)mendefinisikan interface network secara manual, dengan cara memodifikasi file interfaces di /etc/network/, ketimbang membiarkan NetworkManager.service memanage semua network interface yang ada didevice kita. berikut cara mendisable NetworkManager (lakukan dengan hati2, jika memodifikasi lewat ssh)
 
  **1.** Pertama kita check network intrface mana yang dimanage oleh NetworkManager.  
@@ -23,7 +23,7 @@ auto eth0
 iface eth0 inet static
 ```
 ubah mac address (hanya contoh),
- ```
+ ```console
 hwaddress ether 00:15:18:01:81:42
 address 192.168.99.8
 netmask 255.255.255.0
@@ -41,7 +41,7 @@ iface eth0 inet dhcp
 hwaddress ether 00:15:18:01:81:42
 ```
  **3.** Disable NetworkManager.service
- ```
+ ```console
 sudo systemctl stop NetworkManager.service  
 sudo systemctl disable NetworkManager.service  
 sudo systemctl mask NetworkManager.service
